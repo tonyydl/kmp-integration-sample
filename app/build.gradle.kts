@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId = "com.jetbrains.simplelogin.androidapp"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -54,4 +54,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(project(":shared"))
 }
