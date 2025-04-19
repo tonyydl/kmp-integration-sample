@@ -22,13 +22,13 @@ class LoginActivity : AppCompatActivity() {
 
         setContent {
             MaterialTheme {
-                Surface(color = MaterialTheme.colorScheme.background) {
+                Surface() {
                     LoginScreen(
                         viewModel = loginViewModel,
                         onLoginSuccess = {
                             // Show welcome message
-                            val user = loginViewModel.loginResult.value?.success
-                            user?.let {
+                            val successResult = loginViewModel.loginResult.value?.success
+                            successResult?.let {
                                 val welcome = getString(R.string.welcome)
                                 Toast.makeText(
                                     applicationContext,

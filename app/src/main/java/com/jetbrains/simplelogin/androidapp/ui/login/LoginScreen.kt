@@ -25,7 +25,6 @@ fun LoginScreen(
 ) {
     val loginFormState by viewModel.loginFormState.collectAsStateWithLifecycle()
     val loginResult by viewModel.loginResult.collectAsStateWithLifecycle()
-    val context = LocalContext.current
     
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
