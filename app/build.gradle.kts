@@ -42,9 +42,6 @@ android {
         compose = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.7.8"
-    }
     namespace = "com.jetbrains.simplelogin.androidapp"
 }
 
